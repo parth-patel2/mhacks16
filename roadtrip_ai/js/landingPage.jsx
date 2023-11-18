@@ -31,7 +31,7 @@ const StartLocationLabel = () => (
 
 const TripTypeQuestion = () => (
   <div className="frame">
-    <p className="p">What kind of trip are you looking for?</p>
+    <input className="p" type="text" placeholder="What kind of trip are you looking for?" />
   </div>
 );
 
