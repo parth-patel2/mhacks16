@@ -44,17 +44,21 @@ Follow the following steps to run the flask application on your computer
 
     ```bash
     pip install --upgrade pip setuptools wheel
+
+    pip install -r requirements.txt
+
+    # Installs the application
+    pip install -e . 
     ```
 
 4. Once the dependencies are installed, you can run the Flask application:
 
     ```bash
-    flask run
+    flask --app roadtrip_ai --debug run --host 0.0.0.0 --port 8000
     ```
 
-   This will start the development server, and you can access the application in your web browser at `http://localhost:5000`.
+   This will start the development server, and you can access the application in your web browser at `http://localhost:8000`.
 
-Remember to replace `requirements.txt` with the actual filename if your project has a different requirements file. Additionally, provide any specific details or configurations users might need to be aware of during the installation process.
 
 
 
