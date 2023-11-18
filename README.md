@@ -24,22 +24,26 @@ Follow the following steps to run the flask application on your computer
     python3 --version
     ```
 
-2. Next, set up a virtual environment to isolate the dependencies of your project. This step is optional but recommended for better project management. Run the following commands:
+2. Next, set up a virtual environment to isolate the dependencies of your project. Run the following commands:
 
     ```bash
     # Activate the virtual environment
-    brew install python3   # On Linux or macOS
-    # OR
+    brew install python3   # On macOS if you don't have python
+    # OR ON WINDOWS
     sudo apt-get update
-    sudo apt-get install python3 python3-pip python3-venv python3-wheel python3-setuptools   # On Windows
+    sudo apt-get install python3 python3-pip python3-venv python3-wheel python3-setuptools
+
     # Create a virtual environment
     python3 -m venv venv
+
+    # Activate environment
+    source env/bin/activate
     ```
 
-3. Install the required dependencies using pip:
+3. Upgrade some tools:
 
     ```bash
-    pip install -r requirements.txt
+    pip install --upgrade pip setuptools wheel
     ```
 
 4. Once the dependencies are installed, you can run the Flask application:
