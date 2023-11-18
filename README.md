@@ -34,7 +34,7 @@ Follow the following steps to run the flask application on your computer
     sudo apt-get install python3 python3-pip python3-venv python3-wheel python3-setuptools
 
     # Create a virtual environment
-    python3 -m venv venv
+    python3 -m venv env
 
     # Activate environment
     source env/bin/activate
