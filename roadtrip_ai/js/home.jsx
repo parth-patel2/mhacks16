@@ -2,14 +2,31 @@ import React from 'react';
 
 export default function Home({ }) {
     return (
+      <div>
+        <div>
+
+        </div>
         <div
-          style={{
-            width: '100vw', // Full width of the viewport
-            height: '100vh', // Full height of the viewport
-            backgroundImage: 'url("/roadtrip_ai/static/images/rectangle-7.png")', // Replace with your image path
-            backgroundSize: 'cover', // Cover the entire container
-            backgroundPosition: 'center', // Center the image
-          }}
-        />
+        style={{
+          width: '100vw',
+          height: '100vh',
+          margin: 0,
+          padding: 0,
+          overflow: 'hidden',
+          backgroundImage: 'url("/roadtrip_ai/static/images/rectangle-7.png")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          position: 'fixed',  // Use 'fixed' instead of 'absolute' for a full-page background
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+        }}
+      />
+      </div>
+      
       ); 
 }
