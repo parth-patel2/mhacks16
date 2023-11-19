@@ -1,0 +1,265 @@
+.landing-page {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.landing-page .div {
+  background-color: #ffffff;
+  height: 881px;
+  position: relative;
+  width: 1280px;
+}
+
+.landing-page .overlap {
+  background-image: url(/roadtrip_ai/static/images/rectangle-7.png);
+  background-size: 100% 100%;
+  height: 787px;
+  left: 0;
+  position: absolute;
+  top: 83px;
+  width: 1280px;
+}
+
+.landing-page .overlap-group {
+  background-color: #ffffff66;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  height: 191px;
+  left: 41px;
+  position: absolute;
+  top: 500px;
+  width: 1198px;
+}
+
+.landing-page .overlap-2 {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  height: 88px;
+  left: 28px;
+  position: absolute;
+  top: 56px;
+  width: 926px;
+}
+
+.landing-page .rectangle {
+  background-color: #f8e2d6;
+  border: 1px solid;
+  border-color: #2f4e84;
+  height: 62px;
+  left: 726px;
+  opacity: 0.3;
+  position: absolute;
+  top: 13px;
+  width: 1px;
+}
+
+.landing-page .car-front {
+  height: 21px;
+  left: 17px;
+  position: absolute;
+  top: 32px;
+  width: 21px;
+}
+
+.landing-page .label {
+  color: #3e4958;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  left: 784px;
+  letter-spacing: 0;
+  line-height: 14px;
+  position: absolute;
+  top: 33px;
+  white-space: nowrap;
+  width: 76px;
+}
+
+.landing-page .text-wrapper {
+  color: #3e4958;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  left: 49px;
+  letter-spacing: 0;
+  line-height: 14px;
+  position: absolute;
+  top: 33px;
+  white-space: nowrap;
+  width: 91px;
+}
+
+.landing-page .frame {
+  background-color: #eeeeee;
+  height: 42px;
+  left: 360px;
+  position: absolute;
+  top: 25px;
+  width: 344px;
+}
+
+.landing-page .p {
+  color: #999999;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  left: 17px;
+  letter-spacing: 0;
+  line-height: 14px;
+  position: absolute;
+  top: 12px;
+  white-space: nowrap;
+  width: 285px;
+}
+
+.landing-page .label-2 {
+  color: #3e4958;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-size: 12px;
+  font-weight: 600;
+  left: 216px;
+  letter-spacing: 0;
+  line-height: 14px;
+  position: absolute;
+  top: 34px;
+  white-space: nowrap;
+  width: 134px;
+}
+
+.landing-page .map-pin {
+  height: 22px;
+  left: 751px;
+  position: absolute;
+  top: 32px;
+  width: 21px;
+}
+
+.landing-page .user-circle {
+  height: 22px;
+  left: 182px;
+  position: absolute;
+  top: 32px;
+  width: 21px;
+}
+
+.landing-page .button {
+  all: unset;
+  box-sizing: border-box;
+  height: 65px;
+  left: 995px;
+  position: absolute;
+  top: 71px;
+  width: 165px;
+}
+
+.landing-page .input-wrapper {
+  background-color: #e7ac72;
+  border-radius: 12px;
+  height: 65px;
+  position: relative;
+  width: 163px;
+}
+
+.landing-page .input {
+  color: #ffffff;
+  font-family: "Poppins-Bold", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  height: 17px;
+  left: 16px;
+  letter-spacing: 0;
+  line-height: 20px;
+  position: absolute;
+  text-align: center;
+  top: 24px;
+  white-space: nowrap;
+  width: 131px;
+}
+
+.landing-page .life-is-a-journey {
+  color: #6a4a93;
+  font-family: "Montserrat-Bold", Helvetica;
+  font-size: 40px;
+  font-weight: 700;
+  left: 60px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 323px;
+}
+
+.landing-page .mountains {
+  align-items: center;
+  display: inline-flex;
+  gap: 10px;
+  left: 60px;
+  position: absolute;
+  top: 284px;
+}
+
+.landing-page .personalize-your {
+  color: #686a7a;
+  font-family: "Montserrat-Medium", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.landing-page .overlap-3 {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px #00000040;
+  height: 80px;
+  left: 0;
+  position: absolute;
+  top: 3px;
+  width: 1280px;
+}
+
+.landing-page .personalize-your-wrapper {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  left: 479px;
+  position: absolute;
+  top: 35px;
+  width: 323px;
+}
+
+.landing-page .personalize-your-2 {
+  color: #2b1d52;
+  font-family: "Montserrat-Medium", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-right: -59px;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.landing-page .screen-shot {
+  height: 65px;
+  left: 18px;
+  object-fit: cover;
+  position: absolute;
+  top: 8px;
+  width: 173px;
+}
+
+.start-bar-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.start-bar-inputs div {
+  margin: 100px;
+}

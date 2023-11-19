@@ -1,0 +1,15 @@
+#!/bin/bash
+# apprun
+
+
+# set -Eeuo pipefail
+# database_file="var/insta485.sqlite3"
+
+# Check if the database file exists
+# if [ ! -f "$database_file" ]; then
+#     echo "Error: SQLite database file '$database_file' does not exist."
+#     exit 1  # Exit with a non-zero exit code to indicate an error
+# fi
+
+npx webpack
+flask --app roadtrip_ai --debug run --host 0.0.0.0 --port 8000
