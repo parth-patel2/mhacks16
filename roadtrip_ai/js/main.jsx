@@ -1,6 +1,6 @@
 import React, { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { Index } from "./index";
+import Home from "./home";
 
 // Create a root
 const root = createRoot(document.getElementById("reactEntry"));
@@ -9,6 +9,6 @@ const root = createRoot(document.getElementById("reactEntry"));
 // Insert the post component into the DOM
 root.render(
   <StrictMode>
-    <Index />
+    <Home />
   </StrictMode>,
 );
