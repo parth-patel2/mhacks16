@@ -254,3 +254,12 @@
   top: 8px;
   width: 173px;
 }
+
+.start-bar-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.start-bar-inputs div {
+  margin: 100px;
+}

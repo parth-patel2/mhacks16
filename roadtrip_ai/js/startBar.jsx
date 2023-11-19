@@ -2,10 +2,16 @@ import React from "react";
 import '../static/css/style.css';
 
 export const StartBar = () => {
+    // const parseInfo = (data) => {
+
+    // };
     const handleSubmit = (event) => {
         event.preventDefault();
         // Handle form submission logic here
         console.log('Form submitted!');
+        
+        var startCity = document.getElementById('startLocation').value;
+        var destinationCity = document.getElementById('destination').value;
         var textQuery = document.getElementById('textQuery').value;
 
         var apiEndpoint = 'https://places.googleapis.com/v1/places:searchText';
@@ -41,22 +47,55 @@ export const StartBar = () => {
         .catch(error => {
             console.error('Error:', error);
         });
+
+
+        var apiEndpoint1 = 'https://api.openai.com/v1/chat/completions';
+        var openAIKey = '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';
+
+
+        var requestBody = {
+            model: 'gpt-3.5-turbo',
+            messages: [
+            {
+                role: 'system',
+                content: 'You are going to be a trip expert and tell me what cities I can visit between my start and destination. You will only provide a JSON list and no other words besides the cities.',
+            },
+            {
+                role: 'user',
+                content: `Provide me with a JSON list of cities I can visit from ${startCity} to ${destinationCity}.`,
+            },
+            ],
+        };
+
+        var headers = new Headers({
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${openAIKey}`,
+        });
+
+        return fetch(apiEndpoint1, {
+            method: 'POST',
+            headers: headers,
+            body: JSON.stringify(requestBody),
+        })
+        .then(response => response.json())
+        .then(data => {
+            //parseInfo(data);
+            console.log(data["choices"][0]["message"]["content"]);
+        })
+        .catch(error => {
+            console.error('OpenAI Error:', error);
+            throw error;
+        });
     };
     return (
-        <form onSubmit={handleSubmit} method="post" enctype="multipart/form-data">
+        <form onSubmit={handleSubmit} method="post" encType="multipart/form-data">
             <div className="overlap-group">
             <div className="overlap-2">
-                <div className="rectangle" />
-                <img className="car-front" alt="Car front" src="/roadtrip_ai/static/images/car-front.svg" />
-                <div className="label">Destination</div>
-                <div className="text-wrapper">Start location:</div>
-                <div className="frame">
-                {/* <p className="p">What kind of trip are you looking for?</p> */}
-                <input id="textQuery" className="p" placeholder="What kind of trip are you looking for?" />
+                <div className="start-bar-inputs">
+                    <input id="startLocation" placeholder="Start location" />
+                    <input id="destination"  placeholder="Destination" />
+                    <input id="textQuery" style={{width: '300px'}} placeholder="What kind of trip are you looking for?" />
                 </div>
-                <div className="label-2">Road trip assistant:</div>
-                <img className="map-pin" alt="Map pin" src="/roadtrip_ai/static/images/map-pin.svg" />
-                <img className="user-circle" alt="User circle" src="/roadtrip_ai/static/images/user-circle-2.svg" />
             </div>
             <button type="submit" className="button">
                 <div className="input-wrapper">
